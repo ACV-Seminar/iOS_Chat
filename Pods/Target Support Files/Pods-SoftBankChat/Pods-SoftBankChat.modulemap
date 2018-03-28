@@ -1,0 +1,6 @@
+framework module Pods_SoftBankChat {
+  umbrella header "Pods-SoftBankChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

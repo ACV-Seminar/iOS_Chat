@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yu Gothic Bold.otf">
+            <string>YuGo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroContentPage5ViewController" customModule="SoftBankChat" customModuleProvider="target">
+            <connections>
+                <outlet property="doneButton" destination="1zq-Jt-gvq" id="HsV-Pi-w8f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro5" translatesAutoresizingMaskIntoConstraints="NO" id="8QB-Tr-SU3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zq-Jt-gvq">
+                    <rect key="frame" x="47" y="555" width="281" height="47.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="yYV-XY-e3U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="YuGo-Bold" family="YuGothic" pointSize="18"/>
+                    <state key="normal" title="会員登録をしてみよう！">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="IjA-E7-j9f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1zq-Jt-gvq" secondAttribute="trailing" constant="47" id="CDz-4C-u0t"/>
+                <constraint firstAttribute="bottom" secondItem="1zq-Jt-gvq" secondAttribute="bottom" constant="64" id="brv-Is-UKF"/>
+                <constraint firstItem="1zq-Jt-gvq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="grv-So-rHA"/>
+                <constraint firstItem="8QB-Tr-SU3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hdr-4z-856"/>
+                <constraint firstAttribute="trailing" secondItem="8QB-Tr-SU3" secondAttribute="trailing" id="nC4-m5-X3q"/>
+                <constraint firstAttribute="bottom" secondItem="8QB-Tr-SU3" secondAttribute="bottom" id="qYU-x0-myN"/>
+                <constraint firstItem="8QB-Tr-SU3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yCA-Fr-kHZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="11" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro5" width="168" height="300"/>
+    </resources>
+</document>

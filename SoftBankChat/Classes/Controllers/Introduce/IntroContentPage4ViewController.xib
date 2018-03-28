@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yu Gothic Bold.otf">
+            <string>YuGo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroContentPage4ViewController" customModule="SoftBankChat" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="bT9-hL-Fob" id="mG5-YR-hZ2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro4" translatesAutoresizingMaskIntoConstraints="NO" id="C6I-gm-Arb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT9-hL-Fob">
+                    <rect key="frame" x="47" y="456" width="226" height="47.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="3mK-eb-kG2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="YuGo-Bold" family="YuGothic" pointSize="16"/>
+                    <state key="normal" title="偽ブランド品だった場合は？">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="invokePage5:" destination="-1" eventType="touchUpInside" id="AL8-tL-I4g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bT9-hL-Fob" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="1Mk-d3-4FX"/>
+                <constraint firstItem="C6I-gm-Arb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="29I-Iy-7XZ"/>
+                <constraint firstItem="C6I-gm-Arb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ega-K6-qei"/>
+                <constraint firstAttribute="trailing" secondItem="bT9-hL-Fob" secondAttribute="trailing" constant="47" id="HFk-pi-J9E"/>
+                <constraint firstAttribute="bottom" secondItem="bT9-hL-Fob" secondAttribute="bottom" constant="64" id="TGD-nq-2sp"/>
+                <constraint firstAttribute="trailing" secondItem="C6I-gm-Arb" secondAttribute="trailing" id="dNG-I4-UWO"/>
+                <constraint firstAttribute="bottom" secondItem="C6I-gm-Arb" secondAttribute="bottom" id="lGo-nk-My3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro4" width="168" height="300"/>
+    </resources>
+</document>
